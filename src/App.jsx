@@ -77,7 +77,7 @@ export default function App() {
           {product.map((product, index) => (
             <section key={index} className={product.type}>
               <h2>{product.name}</h2>
-              <p>{product.price}円</p>
+              <p>${product.price}</p>
               <img src={"images/" + product.image} alt={product.name} />
             </section>
           ))}
